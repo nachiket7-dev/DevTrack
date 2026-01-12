@@ -27,6 +27,10 @@ export const createProject = async (req, res) => {
             select: { id: true },
         });
 
+        if (!teamLead) {
+            return res.status(404).json({ message: "Team lead not found" });
+        }
+
         const project = await prisma.project.create({
             data: {
                 workspaceId,
