@@ -19,6 +19,7 @@ app.use(clerkMiddleware());
 app.get('/', (req, res) => res.send('Server is live!'));
 
 // Webhooks
+console.log(`Inngest serving ${functions.length} functions`);
 app.use("/api/inngest", serve({ client: inngest, functions }));
 
 // Routes

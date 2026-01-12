@@ -5,7 +5,7 @@ import { neonConfig } from "@neondatabase/serverless";
 
 import ws from "ws";
 neonConfig.webSocketConstructor = ws;
-neonConfig.poolQueryViaFetch = true;
+// neonConfig.poolQueryViaFetch = true;
 
 const connectionString = `${process.env.DATABASE_URL}`;
 
