@@ -12,7 +12,8 @@ if (!inngestEventKey || !inngestSigningKey) {
 
 // Initialize Inngest client
 export const inngest = new Inngest({
-    name: "My Backend App", // Replace with your app name
+    id: "my-backend-app", // Unique App ID
+    name: "My Backend App",
     eventKey: inngestEventKey,
     signingKey: inngestSigningKey,
 });
