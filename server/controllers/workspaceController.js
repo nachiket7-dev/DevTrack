@@ -20,6 +20,8 @@ export const getUserWorkspaces = async (req, res) => {
                 owner: true
             }
         });
+        console.log(`fetching workspaces for user ${userId}`);
+        console.log(`found ${workspaces.length} workspaces`);
         res.json({ workspaces });
     } catch (error) {
         console.log(error);
