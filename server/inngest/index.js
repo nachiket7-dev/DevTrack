@@ -1,5 +1,5 @@
 import { Inngest } from "inngest";
-import prisma from "../prisma"; 
+import prisma from "../configs/prisma.js"; 
 
 // Load environment variables
 const inngestEventKey = process.env.INNGEST_EVENT_KEY;
